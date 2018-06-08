@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - ReadMe", "0 - ReadMe", "{3B713B5F-0D6F-4735-BB86-522D20E09429}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{0A3B34EC-2F71-47ED-A752-B4E58C81E88B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - DomainLayer", "2 - DomainLayer", "{0C128BE8-5D13-4F5D-94F8-37ACF8D5FE81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Server", "3 - Server", "{68BE83EA-3910-408E-BE41-8B2FFA30D746}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Module", "4 - Module", "{108EB1C6-E7A9-4D6C-A9F9-88E95DA88CA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - GeneralLayer", "5 - GeneralLayer", "{27061128-3465-4DA3-A501-E8E0841AB497}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - BaseLayer", "6 - BaseLayer", "{59523520-3AA1-4CE2-891F-F5A864E6F7CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - UnitTester", "7 - UnitTester", "{72C9F9DC-26A4-423E-A5A3-F003B53B0579}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{9996F81A-BBF4-4953-906A-549BDEAD4705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Host.ConsoleApp", "..\Source\1 - Appliaction\HeBianGu.Product.WCFRemoteControl.Host.ConsoleApp\HeBianGu.Product.WCFRemoteControl.Host.ConsoleApp.csproj", "{C92FF2D8-C401-4804-917B-243887A9D173}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Server.LibraryService", "..\Source\3 - Server\HeBianGu.Product.WCFRemoteControl.Server.LibraryService\HeBianGu.Product.WCFRemoteControl.Server.LibraryService.csproj", "{C958FABD-3C99-44EE-94C9-766DC22BC974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Domain.DataManager", "..\Source\2 - DomainLayer\HeBianGu.Product.WCFRemoteControl.Domain.DataManager\HeBianGu.Product.WCFRemoteControl.Domain.DataManager.csproj", "{668761E0-7606-4851-97AF-76381F2959B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.General.WindowService", "..\Source\5 - GeneralLayer\HeBianGu.Product.WCFRemote.General.WindowService\HeBianGu.Product.WCFRemote.General.WindowService.csproj", "{670384F3-AAEE-4D29-A94A-CD7B031E84EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Module.Screen", "..\Source\4 - Module\HeBianGu.Product.WCFRemoteControl.Module.Screen\HeBianGu.Product.WCFRemoteControl.Module.Screen.csproj", "{84D7FD50-1C04-4C9F-8E19-81AAC2A43722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Domain.ServerManager", "..\Source\2 - DomainLayer\HeBianGu.Product.WCFRemoteControl.Domain.ServerManager\HeBianGu.Product.WCFRemoteControl.Domain.ServerManager.csproj", "{07568194-F531-48EC-AC11-AAC0B68BDDB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.General.Logger", "..\Source\5 - GeneralLayer\HeBianGu.Product.WCFRemote.General.Logger\HeBianGu.Product.WCFRemote.General.Logger.csproj", "{50315DF1-3F52-4821-AE55-880828955570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Base.Configer", "..\Source\6 - BaseLayer\HeBianGu.Product.WCFRemote.Base.Configer\HeBianGu.Product.WCFRemote.Base.Configer.csproj", "{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Client", "3 - Client", "{563CC41A-5140-476B-8F75-E16791AA723F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Client", "..\Source\3 - Client\HeBianGu.Product.WCFRemoteControl.Client\HeBianGu.Product.WCFRemoteControl.Client.csproj", "{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C92FF2D8-C401-4804-917B-243887A9D173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92FF2D8-C401-4804-917B-243887A9D173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92FF2D8-C401-4804-917B-243887A9D173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92FF2D8-C401-4804-917B-243887A9D173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C958FABD-3C99-44EE-94C9-766DC22BC974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C958FABD-3C99-44EE-94C9-766DC22BC974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C958FABD-3C99-44EE-94C9-766DC22BC974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C958FABD-3C99-44EE-94C9-766DC22BC974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668761E0-7606-4851-97AF-76381F2959B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668761E0-7606-4851-97AF-76381F2959B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668761E0-7606-4851-97AF-76381F2959B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668761E0-7606-4851-97AF-76381F2959B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D7FD50-1C04-4C9F-8E19-81AAC2A43722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D7FD50-1C04-4C9F-8E19-81AAC2A43722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D7FD50-1C04-4C9F-8E19-81AAC2A43722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D7FD50-1C04-4C9F-8E19-81AAC2A43722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07568194-F531-48EC-AC11-AAC0B68BDDB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07568194-F531-48EC-AC11-AAC0B68BDDB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07568194-F531-48EC-AC11-AAC0B68BDDB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07568194-F531-48EC-AC11-AAC0B68BDDB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50315DF1-3F52-4821-AE55-880828955570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50315DF1-3F52-4821-AE55-880828955570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50315DF1-3F52-4821-AE55-880828955570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50315DF1-3F52-4821-AE55-880828955570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9996F81A-BBF4-4953-906A-549BDEAD4705} = {0A3B34EC-2F71-47ED-A752-B4E58C81E88B}
+		{C92FF2D8-C401-4804-917B-243887A9D173} = {9996F81A-BBF4-4953-906A-549BDEAD4705}
+		{C958FABD-3C99-44EE-94C9-766DC22BC974} = {68BE83EA-3910-408E-BE41-8B2FFA30D746}
+		{668761E0-7606-4851-97AF-76381F2959B3} = {0C128BE8-5D13-4F5D-94F8-37ACF8D5FE81}
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE} = {27061128-3465-4DA3-A501-E8E0841AB497}
+		{84D7FD50-1C04-4C9F-8E19-81AAC2A43722} = {108EB1C6-E7A9-4D6C-A9F9-88E95DA88CA8}
+		{07568194-F531-48EC-AC11-AAC0B68BDDB9} = {0C128BE8-5D13-4F5D-94F8-37ACF8D5FE81}
+		{50315DF1-3F52-4821-AE55-880828955570} = {27061128-3465-4DA3-A501-E8E0841AB497}
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB} = {59523520-3AA1-4CE2-891F-F5A864E6F7CD}
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C} = {563CC41A-5140-476B-8F75-E16791AA723F}
+	EndGlobalSection
+EndGlobal

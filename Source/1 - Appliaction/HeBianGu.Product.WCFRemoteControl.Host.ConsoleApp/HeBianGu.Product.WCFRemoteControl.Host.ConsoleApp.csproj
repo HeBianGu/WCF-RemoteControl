@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C92FF2D8-C401-4804-917B-243887A9D173}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HeBianGu.Product.WCFRemoteControl.Host.ConsoleApp</RootNamespace>
+    <AssemblyName>HeBianGu.Product.WCFRemoteControl.Host.ConsoleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Product\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\2 - DomainLayer\HeBianGu.Product.WCFRemoteControl.Domain.ServerManager\HeBianGu.Product.WCFRemoteControl.Domain.ServerManager.csproj">
+      <Project>{07568194-F531-48EC-AC11-AAC0B68BDDB9}</Project>
+      <Name>HeBianGu.Product.WCFRemoteControl.Domain.ServerManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\5 - GeneralLayer\HeBianGu.Product.WCFRemote.General.Logger\HeBianGu.Product.WCFRemote.General.Logger.csproj">
+      <Project>{50315DF1-3F52-4821-AE55-880828955570}</Project>
+      <Name>HeBianGu.Product.WCFRemote.General.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\6 - BaseLayer\HeBianGu.Product.WCFRemote.Base.Configer\HeBianGu.Product.WCFRemote.Base.Configer.csproj">
+      <Project>{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}</Project>
+      <Name>HeBianGu.Product.WCFRemote.Base.Configer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
