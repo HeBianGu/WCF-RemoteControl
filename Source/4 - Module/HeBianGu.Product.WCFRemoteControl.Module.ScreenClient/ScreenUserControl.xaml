@@ -12,7 +12,15 @@
             <RowDefinition Height="13*"/>
         </Grid.RowDefinitions>
         <Button Content="Button"  Click="Button_Click"/>
-        <Image Name="image" Grid.Row="1" />
+        <Image x:Name="image" Grid.Row="1" />
+
+        <!--<local:BxImage x:Name="image" Grid.Row="1" />-->
+
+        <!--<Border x:Name="border" Grid.Row="1" >
+            <Border.Background>
+                <ImageBrush x:Name="brush" Stretch="UniformToFill" TileMode="None" />
+            </Border.Background>
+        </Border>-->
 
     </Grid>
 </UserControl>

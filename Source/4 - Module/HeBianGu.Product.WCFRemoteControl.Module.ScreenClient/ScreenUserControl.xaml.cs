@@ -4,9 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -36,32 +38,67 @@ namespace HeBianGu.Product.WCFRemoteControl.Module.ScreenClient
         {
             try
             {
-                DataManager.Instance.LoginService(WcfRegisterConfiger.Instance.IP, WcfRegisterConfiger.Instance.Port);
+                //DataManager.Instance.LoginService(WcfRegisterConfiger.Instance.IP, WcfRegisterConfiger.Instance.Port);
 
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-           
-        }
+                DataManager.Instance.LoginService("192.168.1.4", WcfRegisterConfiger.Instance.Port);
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                ImageSource bitmap = DataManager.Instance.GetScreenToImageSource();
-
-                this.image.Source = bitmap;
-
-                Debug.Write("刷新成功！" + DateTime.Now.ToString());
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
+        }
 
+        Timer timer = new Timer();
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            timer.Elapsed += Timer_Elapsed;
+            timer.Interval = 500;
+            timer.Start();
+
+        }
+        ImageSourceConverter imageSourceConverter = new ImageSourceConverter();
+
+        object _locker = new object();
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            try
+            {
+                lock (_locker)
+                {
+                    var bitmap = DataManager.Instance.GetScreenToDatas();
+
+
+
+                    Application.Current.Dispatcher.Invoke(() =>
+                              {
+
+                                  MemoryStream stream = new MemoryStream(bitmap);
+
+                                  BitmapFrame bitmapframe = imageSourceConverter.ConvertFrom(stream) as BitmapFrame;
+
+                                  if (bitmapframe != null)
+                                  {
+                                      this.image.Source = bitmapframe;
+
+                                  }
+
+
+
+                              });
+
+                    Debug.WriteLine("刷新成功！" + DateTime.Now.ToString());
+                }
+
+
+              
+            }
+            catch (Exception ex)
+            {
+                timer.Stop();
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

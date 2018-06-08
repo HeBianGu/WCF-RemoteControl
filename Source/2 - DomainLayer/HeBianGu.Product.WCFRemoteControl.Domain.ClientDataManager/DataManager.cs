@@ -24,14 +24,16 @@ namespace HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager
             _imageClient = new ImageClient(ip, port);
         }
 
-        public Bitmap GetScreenToBitmap()
+        public async Task<Bitmap> GetScreenToBitmap()
         {
-            return _imageClient.GetPrintScreen();
+            var result = await Task.Run(() => _imageClient.GetPrintScreen());
+
+            return result;
         }
 
         public ImageSource GetScreenToImageSource()
         {
-            if(_imageClient==null)
+            if (_imageClient == null)
             {
                 throw new Exception("未连接到服务！请先连接服务再重试");
             }
@@ -40,6 +42,16 @@ namespace HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager
             if (bitmap == null) return null;
 
             return _imageConvertService.ChangeBitmapToImageSource(bitmap);
+        }
+
+
+        public byte[] GetScreenToDatas()
+        {
+            if (_imageClient == null)
+            {
+                throw new Exception("未连接到服务！请先连接服务再重试");
+            }
+            return _imageClient.GetPrintScreenDatas();
         }
     }
 }

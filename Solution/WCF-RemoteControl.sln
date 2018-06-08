@@ -19,8 +19,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - BaseLayer", "6 - BaseLa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - UnitTester", "7 - UnitTester", "{72C9F9DC-26A4-423E-A5A3-F003B53B0579}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{9996F81A-BBF4-4953-906A-549BDEAD4705}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Host.ConsoleApp", "..\Source\1 - Appliaction\HeBianGu.Product.WCFRemoteControl.Host.ConsoleApp\HeBianGu.Product.WCFRemoteControl.Host.ConsoleApp.csproj", "{C92FF2D8-C401-4804-917B-243887A9D173}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Server.LibraryService", "..\Source\3 - Server\HeBianGu.Product.WCFRemoteControl.Server.LibraryService\HeBianGu.Product.WCFRemoteControl.Server.LibraryService.csproj", "{C958FABD-3C99-44EE-94C9-766DC22BC974}"
@@ -36,10 +34,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.General.Logger", "..\Source\5 - GeneralLayer\HeBianGu.Product.WCFRemote.General.Logger\HeBianGu.Product.WCFRemote.General.Logger.csproj", "{50315DF1-3F52-4821-AE55-880828955570}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Base.Configer", "..\Source\6 - BaseLayer\HeBianGu.Product.WCFRemote.Base.Configer\HeBianGu.Product.WCFRemote.Base.Configer.csproj", "{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Client", "3 - Client", "{563CC41A-5140-476B-8F75-E16791AA723F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Client", "..\Source\3 - Client\HeBianGu.Product.WCFRemoteControl.Client\HeBianGu.Product.WCFRemoteControl.Client.csproj", "{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,17 +73,12 @@ Global
 		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9996F81A-BBF4-4953-906A-549BDEAD4705} = {0A3B34EC-2F71-47ED-A752-B4E58C81E88B}
-		{C92FF2D8-C401-4804-917B-243887A9D173} = {9996F81A-BBF4-4953-906A-549BDEAD4705}
+		{C92FF2D8-C401-4804-917B-243887A9D173} = {0A3B34EC-2F71-47ED-A752-B4E58C81E88B}
 		{C958FABD-3C99-44EE-94C9-766DC22BC974} = {68BE83EA-3910-408E-BE41-8B2FFA30D746}
 		{668761E0-7606-4851-97AF-76381F2959B3} = {0C128BE8-5D13-4F5D-94F8-37ACF8D5FE81}
 		{670384F3-AAEE-4D29-A94A-CD7B031E84EE} = {27061128-3465-4DA3-A501-E8E0841AB497}
@@ -97,6 +86,5 @@ Global
 		{07568194-F531-48EC-AC11-AAC0B68BDDB9} = {0C128BE8-5D13-4F5D-94F8-37ACF8D5FE81}
 		{50315DF1-3F52-4821-AE55-880828955570} = {27061128-3465-4DA3-A501-E8E0841AB497}
 		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB} = {59523520-3AA1-4CE2-891F-F5A864E6F7CD}
-		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C} = {563CC41A-5140-476B-8F75-E16791AA723F}
 	EndGlobalSection
 EndGlobal

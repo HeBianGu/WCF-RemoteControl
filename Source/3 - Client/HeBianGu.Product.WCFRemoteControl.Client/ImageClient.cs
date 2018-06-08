@@ -81,6 +81,43 @@ namespace HeBianGu.Product.WCFRemoteControl.Client
             }
         }
 
+        /// <summary> 运行Cmd命令 </summary>
+        public byte[] GetPrintScreenDatas()
+        {
+            //List<byte> result = new List<byte>();
+
+            using (ChannelFactory<IStreamServer> channelFactory = new ChannelFactory<IStreamServer>(WSHttpBinding, ImageSenderAddress))
+            {
+                IStreamServer proxy = channelFactory.CreateChannel();
+
+                MemoryStream writeStream = new MemoryStream();
+
+                proxy.PrintStreenToStream();
+
+                byte[] buffer;
+
+                //获取所用块压缩流，并组装
+                while (proxy.ReadNextBuffer())
+                {
+                    // read bytes from input stream
+                    buffer = proxy.GetCurrectBuffer();
+
+                    // write bytes to output stream
+                    writeStream.Write(buffer, 0, buffer.Length);
+
+                    //result.AddRange(buffer);
+                }
+
+               return  writeStream.GetBuffer();
+
+                //Bitmap bitmap = new Bitmap(writeStream);
+
+                //writeStream.Dispose();
+
+                //return bitmap;
+            }
+        }
+
         public List<string> GetDrivers()
         {
             return Directory.GetLogicalDrives().ToList();

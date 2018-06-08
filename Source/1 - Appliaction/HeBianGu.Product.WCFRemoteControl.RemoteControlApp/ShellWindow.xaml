@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HeBianGu.Product.WCFRemoteControl.RemoteControlApp"
         xmlns:screenclient="clr-namespace:HeBianGu.Product.WCFRemoteControl.Module.ScreenClient;assembly=HeBianGu.Product.WCFRemoteControl.Module.ScreenClient"
         mc:Ignorable="d"
-        Title="ShellWindow" Height="700" Width="1000">
+        Title="ShellWindow" Height="700" Width="1000" >
     <Grid>
         <screenclient:ScreenUserControl/>
     </Grid>
