@@ -25,11 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - 2 - Domain", "3 - 2 - D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - 3 - Client", "3 - 3 - Client", "{4289157A-5FA2-49A8-8C2A-3B83C53AC871}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Module.ScreenClient", "..\Source\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient.csproj", "{CB8F8E18-AF2E-4597-84E7-A54B395492A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Client.Module.Screen", "..\Source\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient\HeBianGu.Product.WCFRemote.Client.Module.Screen.csproj", "{CB8F8E18-AF2E-4597-84E7-A54B395492A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Module.SystemClient", "..\Source\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.SystemClient\HeBianGu.Product.WCFRemoteControl.Module.SystemClient.csproj", "{869D78C7-97B6-49EE-87C6-058FDA747410}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Client.Module.System", "..\Source\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.SystemClient\HeBianGu.Product.WCFRemote.Client.Module.System.csproj", "{869D78C7-97B6-49EE-87C6-058FDA747410}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager", "..\Source\3 - Client\2 - Domain\HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager\HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager.csproj", "{0D8A69CA-B94F-4677-89EC-C790728B614C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Client.Domain.DataManager", "..\Source\3 - Client\2 - Domain\HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager\HeBianGu.Product.WCFRemote.Client.Domain.DataManager.csproj", "{0D8A69CA-B94F-4677-89EC-C790728B614C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Client", "..\Source\3 - Client\3 - Client\HeBianGu.Product.WCFRemoteControl.Client\HeBianGu.Product.WCFRemoteControl.Client.csproj", "{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}"
 EndProject

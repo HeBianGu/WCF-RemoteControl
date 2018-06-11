@@ -92,13 +92,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient.csproj">
+    <ProjectReference Include="..\..\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient\HeBianGu.Product.WCFRemote.Client.Module.Screen.csproj">
       <Project>{cb8f8e18-af2e-4597-84e7-a54b395492a1}</Project>
-      <Name>HeBianGu.Product.WCFRemoteControl.Module.ScreenClient</Name>
+      <Name>HeBianGu.Product.WCFRemote.Client.Module.Screen</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.SystemClient\HeBianGu.Product.WCFRemoteControl.Module.SystemClient.csproj">
+    <ProjectReference Include="..\..\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.SystemClient\HeBianGu.Product.WCFRemote.Client.Module.System.csproj">
       <Project>{869d78c7-97b6-49ee-87c6-058fda747410}</Project>
-      <Name>HeBianGu.Product.WCFRemoteControl.Module.SystemClient</Name>
+      <Name>HeBianGu.Product.WCFRemote.Client.Module.System</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

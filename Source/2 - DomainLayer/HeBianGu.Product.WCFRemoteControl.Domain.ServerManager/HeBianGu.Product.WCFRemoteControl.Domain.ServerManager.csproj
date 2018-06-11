@@ -47,9 +47,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\3 - Server\1 - Server\HeBianGu.Product.WCFRemoteControl.Server.LibraryService\HeBianGu.Product.WCFRemoteControl.Server.LibraryService.csproj">
+    <ProjectReference Include="..\..\3 - Server\1 - Server\HeBianGu.Product.WCFRemoteControl.Server.LibraryService\HeBianGu.Product.WCFRemote.Server.LibraryService.csproj">
       <Project>{c958fabd-3c99-44ee-94c9-766dc22bc974}</Project>
-      <Name>HeBianGu.Product.WCFRemoteControl.Server.LibraryService</Name>
+      <Name>HeBianGu.Product.WCFRemote.Server.LibraryService</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\5 - BaseLayer\HeBianGu.Product.WCFRemote.Base.Configer\HeBianGu.Product.WCFRemote.Base.Configer.csproj">
       <Project>{ec470f91-475d-4cf1-aca3-5c8c0d1ba5cb}</Project>

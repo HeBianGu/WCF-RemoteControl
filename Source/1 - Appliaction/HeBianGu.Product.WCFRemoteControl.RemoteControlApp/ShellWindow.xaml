@@ -4,18 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HeBianGu.Product.WCFRemoteControl.RemoteControlApp"
-        xmlns:screenclient="clr-namespace:HeBianGu.Product.WCFRemoteControl.Module.ScreenClient;assembly=HeBianGu.Product.WCFRemoteControl.Module.ScreenClient"
-        xmlns:systemclient="clr-namespace:HeBianGu.Product.WCFRemoteControl.Module.SystemClient;assembly=HeBianGu.Product.WCFRemoteControl.Module.SystemClient"
+        xmlns:screenclient1="clr-namespace:HeBianGu.Product.WCFRemoteControl.Module.ScreenClient;assembly=HeBianGu.Product.WCFRemote.Client.Module.Screen"
+        xmlns:systemclient1="clr-namespace:HeBianGu.Product.WCFRemoteControl.Module.SystemClient;assembly=HeBianGu.Product.WCFRemote.Client.Module.System"
         mc:Ignorable="d"
         Title="ShellWindow" Height="700" Width="1000" >
     <Grid>
         <TabControl>
             <TabItem Header="屏幕资源">
-                <screenclient:ScreenUserControl/>
+                <screenclient1:ScreenUserControl/>
             </TabItem>
 
             <TabItem Header="系统命令">
-                <systemclient:SystemUserControl/>
+                <systemclient1:SystemUserControl/>
             </TabItem>
         </TabControl>
     

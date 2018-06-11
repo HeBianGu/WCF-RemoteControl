@@ -8,8 +8,8 @@
     <ProjectGuid>{C958FABD-3C99-44EE-94C9-766DC22BC974}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HeBianGu.Product.WCFRemoteControl.Server.LibraryService</RootNamespace>
-    <AssemblyName>HeBianGu.Product.WCFRemoteControl.Server.LibraryService</AssemblyName>
+    <RootNamespace>HeBianGu.Product.WCFRemote.Server.LibraryService</RootNamespace>
+    <AssemblyName>HeBianGu.Product.WCFRemote.Server.LibraryService</AssemblyName>
     <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -62,9 +62,9 @@
       <Project>{8de290c1-9c12-4633-ae41-0daeb66fc014}</Project>
       <Name>HeBianGu.Product.WCFRemote.Base.Interface</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\2 - Domain\HeBianGu.Product.WCFRemoteControl.Domain.DataManager\HeBianGu.Product.WCFRemoteControl.Domain.DataManager.csproj">
+    <ProjectReference Include="..\..\2 - Domain\HeBianGu.Product.WCFRemoteControl.Domain.DataManager\HeBianGu.Product.WCFRemote.Server.Domain.DataManager.csproj">
       <Project>{668761e0-7606-4851-97af-76381f2959b3}</Project>
-      <Name>HeBianGu.Product.WCFRemoteControl.Domain.DataManager</Name>
+      <Name>HeBianGu.Product.WCFRemote.Server.Domain.DataManager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

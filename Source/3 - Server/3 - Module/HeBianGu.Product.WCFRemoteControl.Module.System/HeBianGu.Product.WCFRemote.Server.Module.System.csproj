@@ -7,8 +7,8 @@
     <ProjectGuid>{F9E901AC-0122-472C-BEB1-2A08178DA062}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HeBianGu.Product.WCFRemoteControl.Module.System</RootNamespace>
-    <AssemblyName>HeBianGu.Product.WCFRemoteControl.Module.System</AssemblyName>
+    <RootNamespace>HeBianGu.Product.WCFRemote.Server.Module.System</RootNamespace>
+    <AssemblyName>HeBianGu.Product.WCFRemote.Server.Module.System</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

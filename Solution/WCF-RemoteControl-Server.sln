@@ -27,15 +27,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - 2 - Domain", "3 - 2 - D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - 3 - Module", "3 - 3 - Module", "{C900D2F2-1D97-4D04-8DF4-051090F15825}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Server.LibraryService", "..\Source\3 - Server\1 - Server\HeBianGu.Product.WCFRemoteControl.Server.LibraryService\HeBianGu.Product.WCFRemoteControl.Server.LibraryService.csproj", "{C958FABD-3C99-44EE-94C9-766DC22BC974}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Server.LibraryService", "..\Source\3 - Server\1 - Server\HeBianGu.Product.WCFRemoteControl.Server.LibraryService\HeBianGu.Product.WCFRemote.Server.LibraryService.csproj", "{C958FABD-3C99-44EE-94C9-766DC22BC974}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Domain.DataManager", "..\Source\3 - Server\2 - Domain\HeBianGu.Product.WCFRemoteControl.Domain.DataManager\HeBianGu.Product.WCFRemoteControl.Domain.DataManager.csproj", "{668761E0-7606-4851-97AF-76381F2959B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Server.Domain.DataManager", "..\Source\3 - Server\2 - Domain\HeBianGu.Product.WCFRemoteControl.Domain.DataManager\HeBianGu.Product.WCFRemote.Server.Domain.DataManager.csproj", "{668761E0-7606-4851-97AF-76381F2959B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Module.FileInfo", "..\Source\3 - Server\3 - Module\HeBianGu.Product.WCFRemoteControl.Module.FileInfo\HeBianGu.Product.WCFRemoteControl.Module.FileInfo.csproj", "{5FB181A8-4B27-4D8D-B3A0-5522805CEEE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Server.Module.FileInfo", "..\Source\3 - Server\3 - Module\HeBianGu.Product.WCFRemoteControl.Module.FileInfo\HeBianGu.Product.WCFRemote.Server.Module.FileInfo.csproj", "{5FB181A8-4B27-4D8D-B3A0-5522805CEEE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Module.Screen", "..\Source\3 - Server\3 - Module\HeBianGu.Product.WCFRemoteControl.Module.Screen\HeBianGu.Product.WCFRemoteControl.Module.Screen.csproj", "{7BB9F868-904B-4EDD-96E8-D726789B1C0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Server.Module.Screen", "..\Source\3 - Server\3 - Module\HeBianGu.Product.WCFRemoteControl.Module.Screen\HeBianGu.Product.WCFRemote.Server.Module.Screen.csproj", "{7BB9F868-904B-4EDD-96E8-D726789B1C0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Module.System", "..\Source\3 - Server\3 - Module\HeBianGu.Product.WCFRemoteControl.Module.System\HeBianGu.Product.WCFRemoteControl.Module.System.csproj", "{F9E901AC-0122-472C-BEB1-2A08178DA062}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Server.Module.System", "..\Source\3 - Server\3 - Module\HeBianGu.Product.WCFRemoteControl.Module.System\HeBianGu.Product.WCFRemote.Server.Module.System.csproj", "{F9E901AC-0122-472C-BEB1-2A08178DA062}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.General.Logger", "..\Source\4 - GeneralLayer\HeBianGu.Product.WCFRemote.General.Logger\HeBianGu.Product.WCFRemote.General.Logger.csproj", "{50315DF1-3F52-4821-AE55-880828955570}"
 EndProject
