@@ -50,9 +50,9 @@
       <Project>{670384f3-aaee-4d29-a94a-cd7b031e84ee}</Project>
       <Name>HeBianGu.Product.WCFRemote.General.WindowService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\3 - Client\HeBianGu.Product.WCFRemoteControl.Client\HeBianGu.Product.WCFRemoteControl.Client.csproj">
+    <ProjectReference Include="..\..\3 - Client\HeBianGu.Product.WCFRemoteControl.Client\HeBianGu.Product.WCFRemoteControl.Client.Service.csproj">
       <Project>{b99c8bc9-1239-4bc5-9eb5-42619c976c3c}</Project>
-      <Name>HeBianGu.Product.WCFRemoteControl.Client</Name>
+      <Name>HeBianGu.Product.WCFRemoteControl.Client.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
