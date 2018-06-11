@@ -15,19 +15,19 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Height="30" >
             <TextBlock Text="Cmd命令：" Width="100" VerticalAlignment="Center"/>
-            <TextBox Text="notepad" Width="200" VerticalAlignment="Center"/>
+            <TextBox Text="notepad" x:Name="cmd" Width="200" VerticalAlignment="Center"/>
             <Button Content="执行..."  VerticalAlignment="Center" Click="Button_Click"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Height="30" Grid.Row="1" >
             <TextBlock Text="打开资源：" Width="100" VerticalAlignment="Center"/>
-            <TextBox Text="notepad" Width="200" VerticalAlignment="Center"/>
+            <TextBox Text="notepad" x:Name="explore"  Width="200" VerticalAlignment="Center"/>
             <Button Content="执行..."  VerticalAlignment="Center" Click="Button_Click_1"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Height="30" Grid.Row="2" >
             <TextBlock Text="运行：" Width="100" VerticalAlignment="Center"/>
-            <TextBox Text="notepad" Width="200" VerticalAlignment="Center"/>
+            <TextBox Text="notepad" x:Name="run"  Width="200" VerticalAlignment="Center"/>
             <Button Content="执行..."  VerticalAlignment="Center" Click="Button_Click_2"/>
         </StackPanel>
     </Grid>

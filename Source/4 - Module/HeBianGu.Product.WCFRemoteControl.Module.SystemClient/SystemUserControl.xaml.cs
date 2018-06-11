@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HeBianGu.Product.WCFRemote.Base.Configer;
+using HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,21 +25,36 @@ namespace HeBianGu.Product.WCFRemoteControl.Module.SystemClient
         public SystemUserControl()
         {
             InitializeComponent();
+
+            this.Loaded += SystemUserControl_Loaded;
+        }
+
+        private void SystemUserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                DataManager.Instance.LoginService(WcfRegisterConfiger.Instance.IP, WcfRegisterConfiger.Instance.Port);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            DataManager.Instance.DoCommand(this.cmd.Text);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            DataManager.Instance.DoExplore(this.explore.Text);
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            DataManager.Instance.DoProcess(this.run.Text);
         }
     }
 }

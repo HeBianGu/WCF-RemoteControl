@@ -78,5 +78,15 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\2 - DomainLayer\HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager\HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager.csproj">
+      <Project>{0D8A69CA-B94F-4677-89EC-C790728B614C}</Project>
+      <Name>HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\6 - BaseLayer\HeBianGu.Product.WCFRemote.Base.Configer\HeBianGu.Product.WCFRemote.Base.Configer.csproj">
+      <Project>{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}</Project>
+      <Name>HeBianGu.Product.WCFRemote.Base.Configer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,9 +19,13 @@ namespace HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager
 
         ImageConvertService _imageConvertService = new ImageConvertService();
 
+        SystemClient _systemClient;
+
         public void LoginService(string ip, string port)
         {
             _imageClient = new ImageClient(ip, port);
+
+            _systemClient = new SystemClient(ip, port);
         }
 
         public async Task<Bitmap> GetScreenToBitmap()
@@ -52,6 +56,21 @@ namespace HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager
                 throw new Exception("未连接到服务！请先连接服务再重试");
             }
             return _imageClient.GetPrintScreenDatas();
+        }
+
+        public void DoCommand(string cmd)
+        {
+            _systemClient.DoCommand(cmd);
+        }
+
+        public void DoExplore(string cmd)
+        {
+            _systemClient.DoExplore(cmd);
+        }
+
+        public void DoProcess(string cmd)
+        {
+            _systemClient.DoProcess(cmd);
         }
     }
 }

@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ImageClient.cs" />
+    <Compile Include="SystemClient.cs" />
     <Compile Include="WcfClientBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

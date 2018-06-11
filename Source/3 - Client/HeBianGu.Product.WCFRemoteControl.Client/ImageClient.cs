@@ -118,28 +118,6 @@ namespace HeBianGu.Product.WCFRemoteControl.Client
             }
         }
 
-        public List<string> GetDrivers()
-        {
-            return Directory.GetLogicalDrives().ToList();
-        }
-
-        public List<string> GetFolder(string parent)
-        {
-            try
-            {
-                return Directory.GetDirectories(parent).ToList();
-            }
-            catch
-            {
-                return new List<string>();
-            }
-
-        }
-
-        public List<string> GetFiles(string folder)
-        {
-            return Directory.GetFiles(folder).ToList();
-        }
 
     }
 }
