@@ -1,4 +1,5 @@
-﻿using HeBianGu.Product.WCFRemoteControl.Server.LibraryService;
+﻿using HeBianGu.Product.WCFRemote.Base.Interface;
+using HeBianGu.Product.WCFRemoteControl.Server.LibraryService;
 using System;
 using System.Collections.Generic;
 using System.Linq;

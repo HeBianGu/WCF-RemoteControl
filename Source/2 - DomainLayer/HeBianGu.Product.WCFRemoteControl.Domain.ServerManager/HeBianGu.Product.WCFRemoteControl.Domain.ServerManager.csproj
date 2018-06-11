@@ -55,6 +55,10 @@
       <Project>{ec470f91-475d-4cf1-aca3-5c8c0d1ba5cb}</Project>
       <Name>HeBianGu.Product.WCFRemote.Base.Configer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\5 - BaseLayer\HeBianGu.Product.WCFRemote.Base.Interface\HeBianGu.Product.WCFRemote.Base.Interface.csproj">
+      <Project>{8de290c1-9c12-4633-ae41-0daeb66fc014}</Project>
+      <Name>HeBianGu.Product.WCFRemote.Base.Interface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
