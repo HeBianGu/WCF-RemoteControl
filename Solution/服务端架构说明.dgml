@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Application宿主" Category="Category1" Bounds="20,67.6200000000001,109.493333333333,25.24" />
+    <Node Id="DomainLayer领域模型" Category="Category2" Bounds="199.493333333333,67.62,143.766666666667,25.24" />
+    <Node Id="Loger日志" Bounds="845.87,40,92,25.24" Label="通用日志服务" />
+    <Node Id="WCF基础配置" Bounds="1156.48,67.62,94.6100000000001,25.24" />
+    <Node Id="WCF服务接口" Category="Category5" Bounds="413.26,67.6200000000001,94.61,25.24">
+      <Category Ref="Category6" />
+    </Node>
+    <Node Id="WCF服务接口1" Bounds="1007.87,67.62,118.61,25.24" Label="WCF服务基础接口" />
+    <Node Id="基础层" Bounds="987.87,27.62,283.22,85.24" Group="Expanded" />
+    <Node Id="服务层" Bounds="393.26,27.62,402.61,85.24" Group="Expanded" />
+    <Node Id="服务接口模块" Category="Category6" Bounds="683.87,67.62,92,25.24" />
+    <Node Id="服务接口领域模型" Category="Category6" Bounds="537.87,67.62,116,25.24" />
+    <Node Id="表现层" Bounds="0,27.6200000000001,149.493333333333,85.24" Group="Expanded" />
+    <Node Id="通用服务层" Bounds="825.87,0,132,140.48" Group="Expanded" />
+    <Node Id="通用系统方法" Bounds="845.87,95.24,92,25.24" Label="通用系统服务" />
+    <Node Id="领域层" Bounds="179.493333333333,27.62,183.766666666667,85.24" Group="Expanded" />
+  </Nodes>
+  <Links>
+    <Link Source="WCF服务接口" Target="服务接口领域模型" Bounds="507.869995117188,80.2399978637695,21,0" />
+    <Link Source="WCF服务接口1" Target="WCF基础配置" Bounds="1126.47998046875,80.2399978637695,21,0" />
+    <Link Source="基础层" Target="WCF基础配置" Category="Contains" />
+    <Link Source="基础层" Target="WCF服务接口1" Category="Contains" Bounds="53.3614229237341,488.835221467154,4.44443403438766,21.1917314837105" />
+    <Link Source="服务层" Target="WCF服务接口" Category="Contains" Bounds="-16.1760028796734,149.5646472182,0.0873181675979531,21.0001777983017" />
+    <Link Source="服务层" Target="服务接口模块" Category="Contains" />
+    <Link Source="服务层" Target="服务接口领域模型" Category="Contains" />
+    <Link Source="服务层" Target="通用服务层" Bounds="795.869995117188,70.2399978637695,21,0" />
+    <Link Source="服务接口领域模型" Target="服务接口模块" Bounds="653.869995117188,80.2399978637695,21,0" />
+    <Link Source="表现层" Target="Application宿主" Category="Contains" Bounds="37.2485943670649,7.99999999999994,0.00276129948844073,21.0000000778039" />
+    <Link Source="表现层" Target="领域层" Bounds="149.49333190918,70.2399978637695,21,0" />
+    <Link Source="通用服务层" Target="Loger日志" Category="Contains" Bounds="14.7398581196263,344.168950522191,0.0395521010561168,21.0001159626877" />
+    <Link Source="通用服务层" Target="基础层" Bounds="957.869995117188,70.2399978637695,21,0" />
+    <Link Source="通用服务层" Target="通用系统方法" Category="Contains" />
+    <Link Source="领域层" Target="DomainLayer领域模型" Category="Contains" Bounds="-15.683901195587,53.5061674417121,0.00255475614497591,21.0001000665962" />
+    <Link Source="领域层" Target="服务层" Bounds="363.260009765625,70.2399978637695,21,0" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category5" Label="类别 5" Background="#FF9B4F96" IsTag="True" />
+    <Category Id="Category6" Label="类别 6" Background="#FFA1260D" IsTag="True" />
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 6" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category6')" />
+      <Setter Property="Background" Value="#FFA1260D" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 5" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category5')" />
+      <Setter Property="Background" Value="#FF9B4F96" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 4" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category4')" />
+      <Setter Property="Background" Value="#FF1BA1E2" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 3" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category3')" />
+      <Setter Property="Background" Value="#FF3EBCED" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

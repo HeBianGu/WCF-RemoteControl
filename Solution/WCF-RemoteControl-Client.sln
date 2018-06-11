@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{9F5B6CAB-C788-45B2-903D-90848482B1F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - ReadMe", "0 - ReadMe", "{09D7FCC0-2595-4017-B838-7C48FDE32251}"
+	ProjectSection(SolutionItems) = preProject
+		客户端架构说明.dgml = 客户端架构说明.dgml
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - DomainLayer", "2 - DomainLayer", "{663AD8EE-E748-41B8-9BE3-15783AA6E014}"
 EndProject

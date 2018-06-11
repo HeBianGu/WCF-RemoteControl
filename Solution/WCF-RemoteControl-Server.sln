@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - ReadMe", "0 - ReadMe", "{3B713B5F-0D6F-4735-BB86-522D20E09429}"
+	ProjectSection(SolutionItems) = preProject
+		服务端架构说明.dgml = 服务端架构说明.dgml
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{0A3B34EC-2F71-47ED-A752-B4E58C81E88B}"
 EndProject
