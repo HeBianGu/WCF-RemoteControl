@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - 1 - UserControl", "2 - 1 - UserControl", "{ED0C6ED9-6E7C-4C19-A490-E6EF48415906}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Module.SystemClient", "..\Source\4 - Module\HeBianGu.Product.WCFRemoteControl.Module.SystemClient\HeBianGu.Product.WCFRemoteControl.Module.SystemClient.csproj", "{869D78C7-97B6-49EE-87C6-058FDA747410}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{869D78C7-97B6-49EE-87C6-058FDA747410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869D78C7-97B6-49EE-87C6-058FDA747410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869D78C7-97B6-49EE-87C6-058FDA747410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869D78C7-97B6-49EE-87C6-058FDA747410}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,5 +87,6 @@ Global
 		{CB8F8E18-AF2E-4597-84E7-A54B395492A1} = {ED0C6ED9-6E7C-4C19-A490-E6EF48415906}
 		{0D8A69CA-B94F-4677-89EC-C790728B614C} = {663AD8EE-E748-41B8-9BE3-15783AA6E014}
 		{670384F3-AAEE-4D29-A94A-CD7B031E84EE} = {D868038B-EA23-4B7D-8802-16875014BBBE}
+		{869D78C7-97B6-49EE-87C6-058FDA747410} = {ED0C6ED9-6E7C-4C19-A490-E6EF48415906}
 	EndGlobalSection
 EndGlobal

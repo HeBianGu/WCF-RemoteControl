@@ -13,16 +13,31 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HeBianGu.Product.WCFRemoteControl.RemoteControlApp
+namespace HeBianGu.Product.WCFRemoteControl.Module.SystemClient
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// SystemUserControl.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SystemUserControl : UserControl
     {
-        public MainWindow()
+        public SystemUserControl()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

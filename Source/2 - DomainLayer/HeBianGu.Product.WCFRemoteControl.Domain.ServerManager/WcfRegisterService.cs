@@ -60,6 +60,9 @@ namespace HeBianGu.Product.WCFRemoteControl.Domain.ServerManager
                 wsHttpBinding.MaxBufferPoolSize = int.MaxValue;
                 wsHttpBinding.MaxReceivedMessageSize = int.MaxValue;
                 wsHttpBinding.ReceiveTimeout = new TimeSpan(1, 0, 0);
+                wsHttpBinding.OpenTimeout = new TimeSpan(0, 5, 0);
+                wsHttpBinding.CloseTimeout = new TimeSpan(0, 5, 0);
+                wsHttpBinding.SendTimeout = new TimeSpan(0, 5, 0);
                 wsHttpBinding.Security = new System.ServiceModel.WSHttpSecurity();
                 wsHttpBinding.Security.Mode = SecurityMode.None;
                 host.AddServiceEndpoint(item.Key, wsHttpBinding, string.Empty);

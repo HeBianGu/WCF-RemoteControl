@@ -39,6 +39,8 @@ namespace HeBianGu.Product.WCFRemoteControl.Domain.ServerManager
 
             serviceTypes.Add(typeof(IStreamServer), typeof(StreamServer));
 
+            serviceTypes.Add(typeof(ISystemServer), typeof(SystemServer));
+
             return serviceTypes;
         }
 

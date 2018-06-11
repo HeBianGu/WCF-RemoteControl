@@ -45,6 +45,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SystemServer.cs" />
+    <Compile Include="ISystemServer.cs" />
     <Compile Include="ImageServer.cs" />
     <Compile Include="IImageSenderService.cs" />
     <Compile Include="IStreamServer.cs" />

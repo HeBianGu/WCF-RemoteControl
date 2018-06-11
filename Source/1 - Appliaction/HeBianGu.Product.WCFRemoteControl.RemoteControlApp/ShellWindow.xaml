@@ -5,9 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HeBianGu.Product.WCFRemoteControl.RemoteControlApp"
         xmlns:screenclient="clr-namespace:HeBianGu.Product.WCFRemoteControl.Module.ScreenClient;assembly=HeBianGu.Product.WCFRemoteControl.Module.ScreenClient"
+        xmlns:systemclient="clr-namespace:HeBianGu.Product.WCFRemoteControl.Module.SystemClient;assembly=HeBianGu.Product.WCFRemoteControl.Module.SystemClient"
         mc:Ignorable="d"
         Title="ShellWindow" Height="700" Width="1000" >
     <Grid>
-        <screenclient:ScreenUserControl/>
+        <TabControl>
+            <TabItem Header="屏幕资源">
+                <screenclient:ScreenUserControl/>
+            </TabItem>
+
+            <TabItem Header="系统命令">
+                <systemclient:SystemUserControl/>
+            </TabItem>
+        </TabControl>
+    
     </Grid>
 </Window>

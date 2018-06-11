@@ -38,7 +38,7 @@ namespace HeBianGu.Product.WCFRemoteControl.Module.ScreenClient
         {
             try
             {
-                //DataManager.Instance.LoginService(WcfRegisterConfiger.Instance.IP, WcfRegisterConfiger.Instance.Port);
+                DataManager.Instance.LoginService(WcfRegisterConfiger.Instance.IP, WcfRegisterConfiger.Instance.Port);
 
                 DataManager.Instance.LoginService("192.168.1.4", WcfRegisterConfiger.Instance.Port);
 

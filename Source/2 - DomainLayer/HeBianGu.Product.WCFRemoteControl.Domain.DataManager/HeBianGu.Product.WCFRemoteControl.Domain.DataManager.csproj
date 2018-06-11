@@ -49,6 +49,10 @@
       <Project>{84D7FD50-1C04-4C9F-8E19-81AAC2A43722}</Project>
       <Name>HeBianGu.Product.WCFRemoteControl.Module.Screen</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\4 - Module\HeBianGu.Product.WCFRemoteControl.Module.System\HeBianGu.Product.WCFRemoteControl.Module.System.csproj">
+      <Project>{3CF77BD8-8276-473E-816A-BC0484B8B3D2}</Project>
+      <Name>HeBianGu.Product.WCFRemoteControl.Module.System</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\5 - GeneralLayer\HeBianGu.Product.WCFRemote.General.WindowService\HeBianGu.Product.WCFRemote.General.WindowService.csproj">
       <Project>{670384F3-AAEE-4D29-A94A-CD7B031E84EE}</Project>
       <Name>HeBianGu.Product.WCFRemote.General.WindowService</Name>

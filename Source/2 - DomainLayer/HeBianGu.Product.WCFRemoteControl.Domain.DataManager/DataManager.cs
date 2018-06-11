@@ -1,4 +1,5 @@
 ﻿using HeBianGu.Product.WCFRemoteControl.Module.Screen;
+using HeBianGu.Product.WCFRemoteControl.Module.System;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -16,6 +17,9 @@ namespace HeBianGu.Product.WCFRemoteControl.Domain.DataManager
         StreamService _streamService = new StreamService();
 
         ImageService _imageService = new ImageService();
+
+
+        SystemService _systemService = new SystemService();
 
 
         #region - StreamService -
@@ -63,6 +67,30 @@ namespace HeBianGu.Product.WCFRemoteControl.Domain.DataManager
         public byte[] ImageGetCurrentBuffer()
         {
             return _imageService.GetCurrentBuffer();
+        }
+
+        #endregion
+
+
+
+        #region - SystemService -
+
+        /// <summary> 执行Cmd命令 </summary>
+        public void DoCommand(string cmd)
+        {
+            _systemService.DoCommand(cmd);
+        }
+
+        /// <summary> 执行Process </summary>
+        public void DoProcess(string cmd)
+        {
+            _systemService.DoProcess(cmd);
+        }
+
+        /// <summary> 执行浏览进程 </summary>
+        public void DoExplore(string cmd)
+        {
+            _systemService.DoExplore(cmd);
         }
 
         #endregion
