@@ -4,28 +4,25 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{501FFF76-BBD7-42CC-BBB7-1AE9163389F3}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>HeBianGu.Product.WCFRemoteControl.RemoteControlApp</RootNamespace>
-    <AssemblyName>HeBianGu.Product.WCFRemoteControl.RemoteControlApp</AssemblyName>
+    <ProjectGuid>{CB8F8E18-AF2E-4597-84E7-A54B395492A1}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>HeBianGu.Product.WCFRemoteControl.Module.ScreenClient</RootNamespace>
+    <AssemblyName>HeBianGu.Product.WCFRemoteControl.Module.ScreenClient</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\..\Product\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -36,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -48,22 +46,6 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-  </ItemGroup>
-  <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </ApplicationDefinition>
-    <Compile Include="ShellWindow.xaml.cs">
-      <DependentUpon>ShellWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="ShellWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -79,6 +61,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ScreenUserControl.xaml.cs">
+      <DependentUpon>ScreenUserControl.xaml</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -89,16 +74,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Page Include="ScreenUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient.csproj">
-      <Project>{cb8f8e18-af2e-4597-84e7-a54b395492a1}</Project>
-      <Name>HeBianGu.Product.WCFRemoteControl.Module.ScreenClient</Name>
+    <ProjectReference Include="..\..\..\5 - BaseLayer\HeBianGu.Product.WCFRemote.Base.Configer\HeBianGu.Product.WCFRemote.Base.Configer.csproj">
+      <Project>{ec470f91-475d-4cf1-aca3-5c8c0d1ba5cb}</Project>
+      <Name>HeBianGu.Product.WCFRemote.Base.Configer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.SystemClient\HeBianGu.Product.WCFRemoteControl.Module.SystemClient.csproj">
-      <Project>{869d78c7-97b6-49ee-87c6-058fda747410}</Project>
-      <Name>HeBianGu.Product.WCFRemoteControl.Module.SystemClient</Name>
+    <ProjectReference Include="..\..\2 - Domain\HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager\HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager.csproj">
+      <Project>{0d8a69ca-b94f-4677-89ec-c790728b614c}</Project>
+      <Name>HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.RemoteControlApp", "..\Source\1 - Appliaction\HeBianGu.Product.WCFRemoteControl.RemoteControlApp\HeBianGu.Product.WCFRemoteControl.RemoteControlApp.csproj", "{501FFF76-BBD7-42CC-BBB7-1AE9163389F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{9F5B6CAB-C788-45B2-903D-90848482B1F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - ReadMe", "0 - ReadMe", "{09D7FCC0-2595-4017-B838-7C48FDE32251}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - DomainLayer", "2 - DomainLayer", "{663AD8EE-E748-41B8-9BE3-15783AA6E014}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Client", "3 - Client", "{2A91E4B8-50C5-4FEB-98E4-931D806FE558}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - GeneralLayer", "4 - GeneralLayer", "{D868038B-EA23-4B7D-8802-16875014BBBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - BaseLayer", "5 - BaseLayer", "{60D9376F-11B6-409C-852E-87595D6692ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - UnitTester", "6 - UnitTester", "{94AC675B-98E3-4CF0-817A-C53B09C45511}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - 1 - Module", "3 - 1 - Module", "{E810DC44-A700-41B1-AD65-F6414CB578B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - 2 - Domain", "3 - 2 - Domain", "{F8A61DAF-845F-4BED-AF2C-691870B7155C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - 3 - Client", "3 - 3 - Client", "{4289157A-5FA2-49A8-8C2A-3B83C53AC871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Module.ScreenClient", "..\Source\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient\HeBianGu.Product.WCFRemoteControl.Module.ScreenClient.csproj", "{CB8F8E18-AF2E-4597-84E7-A54B395492A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Module.SystemClient", "..\Source\3 - Client\1 - Module\HeBianGu.Product.WCFRemoteControl.Module.SystemClient\HeBianGu.Product.WCFRemoteControl.Module.SystemClient.csproj", "{869D78C7-97B6-49EE-87C6-058FDA747410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager", "..\Source\3 - Client\2 - Domain\HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager\HeBianGu.Product.WCFRemoteControl.Domain.ClientDataManager.csproj", "{0D8A69CA-B94F-4677-89EC-C790728B614C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemoteControl.Client", "..\Source\3 - Client\3 - Client\HeBianGu.Product.WCFRemoteControl.Client\HeBianGu.Product.WCFRemoteControl.Client.csproj", "{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.General.Logger", "..\Source\4 - GeneralLayer\HeBianGu.Product.WCFRemote.General.Logger\HeBianGu.Product.WCFRemote.General.Logger.csproj", "{50315DF1-3F52-4821-AE55-880828955570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.General.WindowService", "..\Source\4 - GeneralLayer\HeBianGu.Product.WCFRemote.General.WindowService\HeBianGu.Product.WCFRemote.General.WindowService.csproj", "{670384F3-AAEE-4D29-A94A-CD7B031E84EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Base.Configer", "..\Source\5 - BaseLayer\HeBianGu.Product.WCFRemote.Base.Configer\HeBianGu.Product.WCFRemote.Base.Configer.csproj", "{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Product.WCFRemote.Base.Interface", "..\Source\5 - BaseLayer\HeBianGu.Product.WCFRemote.Base.Interface\HeBianGu.Product.WCFRemote.Base.Interface.csproj", "{8DE290C1-9C12-4633-AE41-0DAEB66FC014}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{501FFF76-BBD7-42CC-BBB7-1AE9163389F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501FFF76-BBD7-42CC-BBB7-1AE9163389F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501FFF76-BBD7-42CC-BBB7-1AE9163389F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501FFF76-BBD7-42CC-BBB7-1AE9163389F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB8F8E18-AF2E-4597-84E7-A54B395492A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB8F8E18-AF2E-4597-84E7-A54B395492A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB8F8E18-AF2E-4597-84E7-A54B395492A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB8F8E18-AF2E-4597-84E7-A54B395492A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{869D78C7-97B6-49EE-87C6-058FDA747410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869D78C7-97B6-49EE-87C6-058FDA747410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869D78C7-97B6-49EE-87C6-058FDA747410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869D78C7-97B6-49EE-87C6-058FDA747410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D8A69CA-B94F-4677-89EC-C790728B614C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8A69CA-B94F-4677-89EC-C790728B614C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8A69CA-B94F-4677-89EC-C790728B614C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8A69CA-B94F-4677-89EC-C790728B614C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50315DF1-3F52-4821-AE55-880828955570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50315DF1-3F52-4821-AE55-880828955570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50315DF1-3F52-4821-AE55-880828955570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50315DF1-3F52-4821-AE55-880828955570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE290C1-9C12-4633-AE41-0DAEB66FC014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE290C1-9C12-4633-AE41-0DAEB66FC014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE290C1-9C12-4633-AE41-0DAEB66FC014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE290C1-9C12-4633-AE41-0DAEB66FC014}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{501FFF76-BBD7-42CC-BBB7-1AE9163389F3} = {9F5B6CAB-C788-45B2-903D-90848482B1F2}
+		{E810DC44-A700-41B1-AD65-F6414CB578B3} = {2A91E4B8-50C5-4FEB-98E4-931D806FE558}
+		{F8A61DAF-845F-4BED-AF2C-691870B7155C} = {2A91E4B8-50C5-4FEB-98E4-931D806FE558}
+		{4289157A-5FA2-49A8-8C2A-3B83C53AC871} = {2A91E4B8-50C5-4FEB-98E4-931D806FE558}
+		{CB8F8E18-AF2E-4597-84E7-A54B395492A1} = {E810DC44-A700-41B1-AD65-F6414CB578B3}
+		{869D78C7-97B6-49EE-87C6-058FDA747410} = {E810DC44-A700-41B1-AD65-F6414CB578B3}
+		{0D8A69CA-B94F-4677-89EC-C790728B614C} = {F8A61DAF-845F-4BED-AF2C-691870B7155C}
+		{B99C8BC9-1239-4BC5-9EB5-42619C976C3C} = {4289157A-5FA2-49A8-8C2A-3B83C53AC871}
+		{50315DF1-3F52-4821-AE55-880828955570} = {D868038B-EA23-4B7D-8802-16875014BBBE}
+		{670384F3-AAEE-4D29-A94A-CD7B031E84EE} = {D868038B-EA23-4B7D-8802-16875014BBBE}
+		{EC470F91-475D-4CF1-ACA3-5C8C0D1BA5CB} = {60D9376F-11B6-409C-852E-87595D6692ED}
+		{8DE290C1-9C12-4633-AE41-0DAEB66FC014} = {60D9376F-11B6-409C-852E-87595D6692ED}
+	EndGlobalSection
+EndGlobal
