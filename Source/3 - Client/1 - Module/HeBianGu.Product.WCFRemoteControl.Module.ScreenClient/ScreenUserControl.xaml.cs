@@ -38,7 +38,7 @@ namespace HeBianGu.Product.WCFRemoteControl.Module.ScreenClient
         {
             try
             {
-                DataManager.Instance.LoginService("192.168.1.4", WcfRegisterConfiger.Instance.Port);
+                DataManager.Instance.LoginService("192.168.1.3", WcfRegisterConfiger.Instance.Port);
 
             }
             catch (Exception ex)
@@ -49,54 +49,80 @@ namespace HeBianGu.Product.WCFRemoteControl.Module.ScreenClient
         }
 
         Timer timer = new Timer();
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            timer.Elapsed += Timer_Elapsed;
-            timer.Interval = 500;
-            timer.Start();
+            //timer.Elapsed += Timer_Elapsed;
+            //timer.Interval = 500;
+            //timer.Start();
+
+            this.StartMonitor();
 
         }
         ImageSourceConverter imageSourceConverter = new ImageSourceConverter();
 
+        Stack<byte[]> _stack = new Stack<byte[]>();
+
         object _locker = new object();
-        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+
+        public void StartMonitor()
         {
-            try
+            Task.Run(() =>
             {
-                lock (_locker)
+                while (true)
                 {
+                    //System.Threading.Thread.Sleep(10);
+
                     var bitmap = DataManager.Instance.GetScreenToDatas();
 
-
-
                     Application.Current.Dispatcher.Invoke(() =>
-                              {
+                    {
 
-                                  MemoryStream stream = new MemoryStream(bitmap);
+                        MemoryStream stream = new MemoryStream(bitmap);
 
-                                  BitmapFrame bitmapframe = imageSourceConverter.ConvertFrom(stream) as BitmapFrame;
+                        BitmapFrame bitmapframe = imageSourceConverter.ConvertFrom(stream) as BitmapFrame;
 
-                                  if (bitmapframe != null)
-                                  {
-                                      this.image.Source = bitmapframe;
+                        if (bitmapframe != null)
+                        {
+                            this.image.Source = bitmapframe;
 
-                                  }
+                        }
 
-
-
-                              });
+                    });
 
                     Debug.WriteLine("刷新成功！" + DateTime.Now.ToString());
                 }
+            });
+        }
+
+        private void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+
+            var bitmap = DataManager.Instance.GetScreenToDatas();
+
+            _stack.Push(bitmap);
+
+            Application.Current.Dispatcher.Invoke(() =>
+                      {
+
+                          MemoryStream stream = new MemoryStream(bitmap);
+
+                          BitmapFrame bitmapframe = imageSourceConverter.ConvertFrom(stream) as BitmapFrame;
+
+                          if (bitmapframe != null)
+                          {
+                              this.image.Source = bitmapframe;
+
+                          }
 
 
-              
-            }
-            catch (Exception ex)
-            {
-                timer.Stop();
-                MessageBox.Show(ex.Message);
-            }
+
+                      });
+
+            Debug.WriteLine("刷新成功！" + DateTime.Now.ToString());
+
+
+
         }
     }
 }

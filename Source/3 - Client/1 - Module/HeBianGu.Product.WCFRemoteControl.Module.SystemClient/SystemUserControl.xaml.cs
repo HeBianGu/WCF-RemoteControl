@@ -33,7 +33,7 @@ namespace HeBianGu.Product.WCFRemoteControl.Module.SystemClient
         {
             try
             {
-                DataManager.Instance.LoginService(WcfRegisterConfiger.Instance.IP, WcfRegisterConfiger.Instance.Port);
+                DataManager.Instance.LoginService("192.168.1.3", WcfRegisterConfiger.Instance.Port);
 
             }
             catch (Exception ex)
